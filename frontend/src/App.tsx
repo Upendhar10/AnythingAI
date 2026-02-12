@@ -1,9 +1,7 @@
-import './App.css'
-
 function App() {
 
   return (
-    <h1>AnythingAI | Frontend</h1>
+    <h1>ANYTHING.ai</h1>
   )
 }
 
