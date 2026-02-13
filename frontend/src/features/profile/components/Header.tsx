@@ -19,7 +19,6 @@ function Header() {
   function handleLogout(){
     dispatch({ type: "auth/logout" });
     navigate('/login')
-    alert("Logout Sucessfull!");
   }
 
   return (
