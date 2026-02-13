@@ -11,7 +11,7 @@ function RegisterPage() {
   const navigate = useNavigate()
 
   function handleRegistration(data : RegisterFormValues){
-    console.log(data);
+    // console.log(data);
     dispatch(registerUserThunk({
       fullName : data.fullName,
       email : data.email,
