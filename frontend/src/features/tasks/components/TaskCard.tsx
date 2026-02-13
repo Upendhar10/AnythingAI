@@ -35,20 +35,13 @@ const TaskCard = ({ task }: TaskCardProps) => {
     <div className="border rounded-lg p-4 shadow-sm  space-y-3">
       {isEditing ? (
         <>
-
-          <div>
-            <input
+          <input
             type="text"
             name="title"
             value={editedTask.title}
             onChange={handleChange}
             className="w-full border rounded px-3 py-2"
-            />
-
-            
-
-          </div>
-
+          />
 
           <textarea
             name="description"
@@ -111,8 +104,6 @@ const TaskCard = ({ task }: TaskCardProps) => {
           >
             {editedTask.status}
           </span>
-
-          
         </>
       )}
     </div>
