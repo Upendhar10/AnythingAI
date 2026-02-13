@@ -2,6 +2,7 @@ import { FaUserAltSlash , FaUser   } from "react-icons/fa";
 import { useAppDispatch } from "../../../app/hooks";
 
 import { useNavigate, Link } from "react-router-dom";
+import {logoutUser} from '../../auth/authSlice'
 
 function Logo() {
   return (
@@ -16,8 +17,8 @@ function Header() {
   const dispatch = useAppDispatch();
   const navigate = useNavigate()
 
-  function handleLogout(){
-    dispatch({ type: "auth/logout" });
+  const handleLogout = async() => {
+    dispatch(logoutUser());
     navigate('/login')
   }
 

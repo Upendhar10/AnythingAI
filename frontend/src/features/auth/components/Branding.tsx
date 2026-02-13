@@ -1,3 +1,12 @@
+
+export const Loader = () => {
+  return(
+    <div className="flex items-center justify-center h-screen">
+      <p>Please wait....</p>
+    </div>
+  )
+}
+
 function Branding() {
   return (
     <div className="text-center max-w-md">

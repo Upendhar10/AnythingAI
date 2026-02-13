@@ -1,11 +1,13 @@
 import { Navigate, Outlet } from "react-router-dom";
 import { useAppSelector } from "../app/hooks";
 
+import {Loader} from "../features/auth/components/Branding"
+
 function PublicAppLayout() {
   const { isAuthenticated, isInitialized } = useAppSelector( (state) => state.auth);
 
   if (!isInitialized) {
-    return <div>Loading...</div>;
+    return <Loader/>;
   }
 
   if (isAuthenticated) {
