@@ -34,6 +34,7 @@ function authMiddleware(req : Request, res: Response, next: NextFunction) {
         // Attach userInfo to the request
         req.user = userInfo;
         
+        next()
     } catch (error) {
         return res.status(401).json({
             message: 'Invalid or Expired Token',

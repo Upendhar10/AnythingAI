@@ -15,6 +15,8 @@ const getCurrentUser = async (req : Request, res: Response) => {
             });
         }
 
+        // console.log(user);
+        
         return res.status(200).json({ user});
         
     } catch (error) {
