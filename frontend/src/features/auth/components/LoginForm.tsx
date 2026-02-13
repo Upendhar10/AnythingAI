@@ -2,6 +2,8 @@ import { useForm } from "react-hook-form"
 import FormContainer from "./FormContainer"
 import FormInput from "./FormInput"
 
+import { Link } from "react-router-dom"
+
 export type LoginFormValues = {
   email: string
   password: string
@@ -34,7 +36,7 @@ export default function LoginForm({
       <FormInput
         type="email"
         label="Email"
-        placeholder="Mike.tyson@yahoo.com"
+        placeholder="mike.tyson@yahoo.com"
         registration={register("email", {
           required: "Email is required",
         })}
@@ -64,7 +66,15 @@ export default function LoginForm({
       >
         {isLoading ? "Please wait..." : "Login"}
       </button>
-      <p className="text-sm">Don't have an account ? <a href="#" className="hover:text-blue-500">Register Now</a></p>
+
+      <p className="text-sm">Don't have an account ? 
+        <Link
+        to="/register"
+        className="hover:text-blue-500 cursor-pointer px-1"
+        >
+          Register Now
+        </Link>
+      </p>
     </FormContainer>
   )
 }

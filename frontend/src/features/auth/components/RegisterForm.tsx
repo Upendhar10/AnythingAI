@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form"
 import FormContainer from "./FormContainer"
 import FormInput from "./FormInput"
+import { Link } from "react-router-dom"
 
 export type RegisterFormValues = {
   fullName: string
@@ -91,7 +92,14 @@ export default function RegisterForm({
       >
         {isLoading ? "Please wait..." : "Register"}
       </button>
-      <p className="text-sm">Already have an account ? <a href="#" className="hover:text-blue-500">Login Now</a></p>
+      <p className="text-sm">Already have an account ?  
+        <Link
+        to="/login"
+        className="hover:text-blue-500 cursor-pointer px-1"
+        >
+           Login Now
+        </Link>
+      </p>
     </FormContainer>
   )
 }
