@@ -10,6 +10,7 @@ import LandingPage from "./components/LandingPage";
 import LoginPage from "./features/auth/pages/LoginPage";
 import RegisterPage from "./features/auth/pages/RegisterPage";
 import DashboardPage from "./components/DashboardPage";
+import ProfilePage from "./features/profile/ProfilePage";
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
       {/* Protected Routes */}
       <Route element={<ProtectedAppLayout />}>
         <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Route>
 
     </Routes>

@@ -14,8 +14,6 @@ function ProtectedAppLayout() {
 
   return (
     <div>
-      {/* Example shared layout UI */}
-      <nav>Navbar</nav>
       <Outlet />
     </div>
   );
