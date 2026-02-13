@@ -1,4 +1,4 @@
-import jwt, {JwtPayload} from "jsonwebtoken";
+import jwt, {JwtPayload, SignOptions} from "jsonwebtoken";
 import {JWT_SECRET_KEY} from '../config/env.config'
 
 if(!JWT_SECRET_KEY){
@@ -14,7 +14,7 @@ export interface JwtTokenPayload {
 
 function generateJWTToken(
     payload : JwtTokenPayload,
-    expiresIn : string = '1d'
+    expiresIn : SignOptions["expiresIn"] = "1d"
 ) : string {
     return jwt.sign(payload, JWT_SECRET, {expiresIn})
 }
