@@ -1,6 +1,6 @@
-## Anything.ai Assignment for Frontend Developer
+# Anything.ai Assignment for Frontend Developer
 
-## 📌 Project Overview
+## Project Overview
 
 This is a frontend focused full-stack web application built with:
 
@@ -14,9 +14,9 @@ The application allows users to register, login, and manage tasks through a resp
 
 ---
 
-# ✨ Features
+## Features
 
-## 🔐 Authentication
+### Authentication
 
 * User registration
 * User login
@@ -27,7 +27,7 @@ The application allows users to register, login, and manage tasks through a resp
 
 ---
 
-## 📊 Dashboard
+### Dashboard
 
 * Responsive UI
 * View all tasks
@@ -36,7 +36,7 @@ The application allows users to register, login, and manage tasks through a resp
 
 ---
 
-## 🔄 Frontend–Backend Integration
+### Frontend–Backend Integration
 
 * RESTful API communication
 * Token-based authentication using Authorization headers
@@ -45,9 +45,9 @@ The application allows users to register, login, and manage tasks through a resp
 
 ---
 
-# 🏗 Project Structure
+## Project Structure
 
-## 📁 Frontend
+### Frontend
 
 ```
 src/
@@ -67,7 +67,7 @@ src/
 * Type-safe models using TypeScript
 * Clean separation of concerns
 
-## 📁 Backend
+### Backend
 
 ```
 src/
@@ -89,7 +89,7 @@ src/
 
 ---
 
-# 🔒 Security Practices
+## Security Practices
 
 * Password hashing before database storage
 * JWT validation middleware
@@ -99,21 +99,26 @@ src/
 
 ---
 
-# 📬 API Documentation
+## API Documentation
 
 [Postman docs](./docs/postman/) are included in the repository for testing all endpoints.
 
 ---
 
-# 🛠 Setup Instructions
+## Scalability Documentation
 
-## 1️⃣ Clone the Repository
+[Scalibility docs](./docs/Scalability.md) are included in the repository for Optimized frontend-backend Integration.
+
+---
+## 🛠 Setup Instructions
+
+### Clone the Repository
 
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/Upendhar10/AnythingAI.git
 ```
 
-## 2️⃣ Backend Setup
+### Backend Setup
 
 ```bash
 cd backend
@@ -129,7 +134,7 @@ JWT_SECRET=
 DATABASE_URL=
 ```
 
-## 3️⃣ Frontend Setup
+### Frontend Setup
 
 ```bash
 cd frontend
